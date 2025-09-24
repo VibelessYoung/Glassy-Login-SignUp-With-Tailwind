@@ -91,6 +91,50 @@
 
   </div>
 
+<div id="facebookModal" 
+     class="fixed inset-0 flex items-center justify-center bg-black/50 hidden z-50">
+
+  <div class="flex w-[450px] h-52 bg-white text-black rounded-2xl relative">
+
+    <div class="bg-cyan-600 text-white w-1/3 flex items-center justify-center rounded-l-2xl">
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="w-6 h-6 fill-current">
+        <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06H293V6.26S259.43 0 225.36 0c-73.22 0-121.06 44.38-121.06 124.72V195.3H22.89V288h81.41v224h100.17V288z"/>
+      </svg>
+
+    </div>
+
+    <div class="flex flex-col items-center mx-auto py-10">
+
+      <strong class="text-black text-3xl">Email :</strong>
+
+      <input type="email" placeholder="Enter..." class="outline-none w-full text-black placeholder-black-300 border-2 border-gray-400 rounded-full px-3 py-1 mt-8"/>
+
+      <button class="bg-cyan-600 text-white w-full rounded-full mt-4 py-1 hover:bg-cyan-800 transition-all duration-300">Submit</button>
+
+    </div>
+
+  </div>
+
+  </div>
+
+ <script>
+  const facebookBtn = document.querySelector('.bg-blue-600');
+  const facebookModal = document.getElementById('facebookModal');
+
+  facebookBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    facebookModal.classList.remove('hidden');
+  });
+
+  facebookModal.addEventListener('click', (e) => {
+    if (e.target === facebookModal) {
+      facebookModal.classList.remove('show');
+      facebookModal.classList.add('hidden');
+    }
+  });
+</script>
+
 </body>
 
 </html>
