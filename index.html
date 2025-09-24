@@ -218,9 +218,11 @@
       id="facebookModal"
       class="fixed inset-0 flex items-center justify-center bg-black/50 hidden z-50"
     >
-      <div class="flex w-[450px] h-52 bg-white text-black rounded-2xl relative">
+      <div
+        class="flex flex-col sm:flex-row w-[90%] max-w-[450px] bg-white text-black rounded-2xl relative"
+      >
         <div
-          class="bg-cyan-600 text-white w-1/3 flex items-center justify-center rounded-l-2xl"
+          class="bg-cyan-600 text-white w-full sm:w-1/3 flex items-center justify-center rounded-t-2xl sm:rounded-l-2xl p-6"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -233,7 +235,7 @@
           </svg>
         </div>
 
-        <div class="flex flex-col items-center mx-auto py-10">
+        <div class="flex flex-col items-center w-full py-10 px-6">
           <strong class="text-black text-3xl">Email :</strong>
 
           <input
@@ -255,9 +257,11 @@
       id="githubmodal"
       class="fixed inset-0 flex items-center justify-center bg-black/50 hidden z-50"
     >
-      <div class="flex w-[450px] h-52 bg-white text-black rounded-2xl relative">
+      <div
+        class="flex flex-col sm:flex-row w-[90%] max-w-[450px] bg-white text-black rounded-2xl relative"
+      >
         <div
-          class="bg-gray-800 text-white w-1/3 flex items-center justify-center rounded-l-2xl"
+          class="bg-gray-800 text-white w-full sm:w-1/3 flex items-center justify-center rounded-t-2xl sm:rounded-l-2xl p-6"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -270,7 +274,7 @@
           </svg>
         </div>
 
-        <div class="flex flex-col items-center mx-auto py-10">
+        <div class="flex flex-col items-center w-full py-10 px-6">
           <strong class="text-black text-3xl">Email :</strong>
 
           <input
@@ -292,9 +296,11 @@
       id="googlemodal"
       class="fixed inset-0 flex items-center justify-center bg-black/50 hidden z-50"
     >
-      <div class="flex w-[450px] h-52 bg-white text-black rounded-2xl relative">
+      <div
+        class="flex flex-col sm:flex-row w-[90%] max-w-[450px] bg-white text-black rounded-2xl relative"
+      >
         <div
-          class="bg-red-500 text-white w-1/3 flex items-center justify-center rounded-l-2xl"
+          class="bg-red-500 text-white w-full sm:w-1/3 flex items-center justify-center rounded-t-2xl sm:rounded-l-2xl p-6"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -307,7 +313,7 @@
           </svg>
         </div>
 
-        <div class="flex flex-col items-center mx-auto py-10">
+        <div class="flex flex-col items-center w-full py-10 px-6">
           <strong class="text-black text-3xl">Email :</strong>
 
           <input
@@ -327,13 +333,13 @@
 
     <script>
       const triggers = {
-        googleBtn: document.querySelector(".bg-red-500"), // دکمه گوگل
-        githubBtn: document.querySelector(".bg-gray-800"), // دکمه گیت‌هاب
-        facebookBtn: document.querySelector(".bg-blue-600"), // دکمه فیسبوک
+        googleBtn: document.querySelector(".bg-red-500"),
+        githubBtn: document.querySelector(".bg-gray-800"),
+        facebookBtn: document.querySelector(".bg-blue-600"),
       };
 
       const modals = {
-        googleBtn: document.getElementById("googlemodal"), // نام ID باید دقیقا همونی باشه که تو HTML گذاشتی
+        googleBtn: document.getElementById("googlemodal"),
         githubBtn: document.getElementById("githubmodal"),
         facebookBtn: document.getElementById("facebookModal"),
       };
